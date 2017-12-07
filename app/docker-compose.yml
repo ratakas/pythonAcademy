@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  app:
+    build: ./product
+    command: bash -c "cron && python3"
+    volumes:
+      - ./database:/bd-data/
+      - ./product:/usr/src/app
+    ports:
+      - 5000:80
+    network_mode: host
+    stdin_open: true
+    tty: true
+  api:
+    build: ./web
+    command: bash -c "python run.py"
+    volumes:
+      - ./database:/bd-data
+      - ./web:/usr/src/api
+    ports:
+      - 8000:8000
+    network_mode: bridge
+    tty: true  

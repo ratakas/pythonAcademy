@@ -1,0 +1,4 @@
+Flask==0.12
+flask_restful==0.3.5
+flask_sqlalchemy
+marshmallow_jsonapi
