@@ -1,0 +1,58 @@
+#pip install --upgrade google-api-python-client
+#pip install --upgrade google-auth google-auth-oauthlib google-auth-httplib2
+#pip install wget
+
+#!/usr/bin/python
+
+
+
+GET /q.php?v=hT_nvWreIhg&h=2495839 HTTP/1.1
+Host: www.yt-mp3-api.com
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: https://www.yt-mp3-api.com/ytmp3-api/
+X-Requested-With: XMLHttpRequest
+Cookie: __cfduid=ddeb54ac9cc129b4e1bf572fb68fe892c1513372825; _ga=GA1.2.207993424.1513372845; _gid=GA1.2.1185167832.1513372845; PHPSESSID=809cs26rldog8t4hpguevm1385; _gat_gtag_UA_106464370_1=1
+Connection: close
+
+
+HTTP/1.1 200 OK
+Date: Fri, 15 Dec 2017 21:30:12 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Access-Control-Allow-Origin: *
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Server: cloudflare-nginx
+CF-RAY: 3cdc80ad8cf25368-MIA
+Content-Length: 67
+
+OK|2|2c6a803127d181ef8c5d737eb211e74b|OneRepublic - Counting Stars|
+
+
+GET /dl.php?id=2c6a803127d181ef8c5d737eb211e74b HTTP/1.1
+Host: pt2.yt-mp3-api.com
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Cookie: __cfduid=ddeb54ac9cc129b4e1bf572fb68fe892c1513372825; _ga=GA1.2.207993424.1513372845; _gid=GA1.2.1185167832.1513372845; _gat_gtag_UA_106464370_1=1
+Connection: close
+Upgrade-Insecure-Requests: 1
+
+
+HTTP/1.1 200 OK
+Date: Fri, 15 Dec 2017 21:30:36 GMT
+Content-Type: audio/mpeg
+Content-Length: 6794272
+Connection: close
+X-Powered-By: PHP/5.4.45-1~dotdeb+7.1
+Cache-Control: public
+Content-Discription: File Transfer
+Content-Disposition: attachment; filename="OneRepublic - Counting Stars.mp3"
+Content-Transfer-Encoding: binary
+Server: cloudflare-nginx
+CF-RAY: 3cdc8149155e2e7b-MIA
