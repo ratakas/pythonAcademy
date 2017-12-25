@@ -25,4 +25,3 @@ hilo5.start()
 hilo6.start()
 
 
-http://python-para-impacientes.blogspot.com.co/2016/12/threading-programacion-con-hilos-i.html

@@ -1,0 +1,4 @@
+--upgrade google-api-python-client
+--upgrade google-auth google-auth-oauthlib google-auth-httplib2
+wget
+beautifulsoup4
