@@ -14,7 +14,8 @@ DEVELOPER_KEY = "AIzaSyBDwBDY9lQ62RwMmlDhs8Djw6YlBxynZrs"
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 
-pathMusica="/data/local/appmusica/descargas/"
+#pathMusica="/data/local/appmusica/descargas/"
+pathMusica="musica/"
 
 def fetch_all_youtube_videos(playlistId):
     youtube = build(YOUTUBE_API_SERVICE_NAME,
@@ -48,8 +49,8 @@ def verificarVideo(idVideo):
 	lines = []
 	with open(pathMusica+"log",'r+') as file:
 		for line in file: 
-			line = line.strip() #or some other preprocessing
-			lines.append(line) #storing everything in memory!
+			line = line.strip() 
+			lines.append(line)
 		file.close()
 	
 	if idVideo not in lines:	
